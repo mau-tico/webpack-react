@@ -54,6 +54,13 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-    ]
+    ],
+
+    debServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        historyApiFallback: true,
+        port: 8888,
+    },
 
 };
